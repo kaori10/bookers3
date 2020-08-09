@@ -1,5 +1,13 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/edit.html.erb</p>
+<h2>User info</h2>
+
+<% if @user.errors.any? %>
+<%= @user.errors.count %>errors prohibited this book from being saved:
+<br>
+<% @user.errors.full_messages.each do |message| %>
+･<%= message %><br>
+<% end %>
+<% end %>
+
 
 <%= form_for @user do |f| %>
 
