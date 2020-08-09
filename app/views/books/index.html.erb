@@ -19,7 +19,7 @@
           <%= attachment_image_tag @user, :profile_image, fallback: "no_image.jpg" %><br>
           <%= @user.name %><br>
           <%= @user.introduction %><br>
-          <%= link_to "edit", edit_user_path(@user) %>
+          <%= link_to "edit", edit_user_path(@user), class: "btn btn-default" %>
           </div>
 
           <div class="row">

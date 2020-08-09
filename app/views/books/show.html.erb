@@ -10,7 +10,7 @@
           <%= attachment_image_tag @user, :profile_image, fallback: "no_image.jpg" %><br>
           <%= @book.user.name %><br>
           <%= @book.user.introduction %><br>
-          <%= link_to "edit", edit_user_path(@book.user.id) %>
+          <%= link_to "edit", edit_user_path(@book.user.id), class: "btn btn-default" %>
 
           </div>
 
